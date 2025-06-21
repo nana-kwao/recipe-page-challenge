@@ -23,50 +23,51 @@ body{
     align-items: center;
     min-height: 100vh;
     background-color: hsl(30, 54%, 90%);
-    padding: 5%;
+    padding: 2.5rem;
 }
 .container{
-    width: 335px;
+    width: 20.9375rem;
     height: auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
     background-color: hsl(0, 0%, 100%);
-    padding: 15px;
-    border-radius: 15px;
+    padding: 0.9375rem;
+    border-radius: 0.9375rem;
     gap: 1rem;
     cursor: default;
 }
 .container > img{
     width: 100%;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
 }
 .container .header{
     font-family: 'YoungSerif', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 .container .overview{
-    font-size: 0.65rem;
+    font-size: 0.8rem;
     color: hsl(30, 10%, 34%);
 }
 .container .requirement{
     background-color: hsl(330, 100%, 98%);
-    padding: 10px;
-    border-radius: 5px;
+    padding: 0.625rem;
+    border-radius: 0.3125rem;
 }
 .requirement > p{
     color: hsl(332, 51%, 32%);
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-family: 'Outfit-Bold', sans-serif;
-    margin-bottom: 5px;
+    margin-bottom: 0.3125rem;
 }
 .requirement > ul, .ingredient > ul, .instructions > ol{
-    font-size: 0.65rem;
-    padding-left: 10px;
+    font-size: 0.8rem;
+    padding-left: 0.625rem;
 }
 .requirement > ul > li, .ingredient > ul > li, .instructions > ol > li{
     color: hsl(30, 10%, 34%);
-    margin: 5px 0;
+    margin: 0.3125rem 0;
+    padding-left: 0.625rem;
 }
 .requirement > ul li::marker{
     color: hsl(332, 51%, 32%);
@@ -74,46 +75,45 @@ body{
 .ingredient  > ul > li::marker, .instructions > ol > li::marker{
     color: hsl(14, 45%, 36%);
     font-family: 'Outfit-Bold', sans-serif;
+    font-size: 0.65rem;
 } 
 .pre-span{
     color: hsl(24, 5%, 18%);
     font-family: 'Outfit-Bold', sans-serif;
-    /* padding: 10px; */
 }
 .ingredient, .instructions{
     border-bottom: 0.1rem solid hsl(30, 18%, 87%);
-    padding-bottom: 5px;
+    padding-bottom: 0.3125rem;
 }
 .sub-header{
     font-family: 'YoungSerif', sans-serif;
     color: hsl(14, 45%, 36%);
-    margin-bottom: 5px;
+    margin-bottom: 0.3125rem;
 }
 .para, .key{
     color: hsl(30, 10%, 34%);
-    font-size: 0.65rem;
+    font-size: 0.8rem;
     text-align: left;
 }
 tr:not(:last-child) th{
-    border-bottom: 01px solid hsl(30, 18%, 87%);
+    border-bottom: 0.0625rem solid hsl(30, 18%, 87%);
 }
 .key, .value{
-    width: 155px;
-    padding: 5px;
+    width: 9.6875rem;
+    padding: 0.3125rem;
 }
 .value{
     color: hsl(14, 45%, 36%);
-    font-size: 0.65rem;
+    font-size: 0.8rem;
     font-family: 'Outfit-Bold', sans-serif;
 }
-
 .attribution {
-    margin-top: 80px;
-    font-size: 11px; 
-    text-align: center; 
+    margin-top: 5rem;
+    font-size: 0.6875rem;
+    text-align: center;
 }
 .attribution a { 
-    color: hsl(228, 45%, 44%); 
+    color: hsl(228, 45%, 44%);
 }
 @media screen and (max-width: 476px) {
     body{
