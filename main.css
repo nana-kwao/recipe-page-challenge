@@ -1,0 +1,122 @@
+@font-face {
+    font-family: 'Outfit';
+    src: url('./assets/fonts/outfit/static/Outfit-Regular.ttf');
+}
+@font-face {
+    font-family: 'Outfit-Bold';
+    src: url('./assets/fonts/outfit/static/Outfit-Bold.ttf');
+}
+@font-face {
+    font-family: 'YoungSerif';
+    src: url('./assets/fonts/young-serif/YoungSerif-Regular.ttf');
+}
+*{
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(30, 54%, 90%);
+    padding: 5%;
+}
+.container{
+    width: 335px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 100%);
+    padding: 15px;
+    border-radius: 15px;
+    gap: 1rem;
+    cursor: default;
+}
+.container > img{
+    width: 100%;
+    border-radius: 5px;
+}
+.container .header{
+    font-family: 'YoungSerif', sans-serif;
+    font-size: 1.2rem;
+}
+.container .overview{
+    font-size: 0.65rem;
+    color: hsl(30, 10%, 34%);
+}
+.container .requirement{
+    background-color: hsl(330, 100%, 98%);
+    padding: 10px;
+    border-radius: 5px;
+}
+.requirement > p{
+    color: hsl(332, 51%, 32%);
+    font-size: 0.8rem;
+    font-family: 'Outfit-Bold', sans-serif;
+    margin-bottom: 5px;
+}
+.requirement > ul, .ingredient > ul, .instructions > ol{
+    font-size: 0.65rem;
+    padding-left: 10px;
+}
+.requirement > ul > li, .ingredient > ul > li, .instructions > ol > li{
+    color: hsl(30, 10%, 34%);
+    margin: 5px 0;
+}
+.requirement > ul li::marker{
+    color: hsl(332, 51%, 32%);
+}
+.ingredient  > ul > li::marker, .instructions > ol > li::marker{
+    color: hsl(14, 45%, 36%);
+    font-family: 'Outfit-Bold', sans-serif;
+} 
+.pre-span{
+    color: hsl(24, 5%, 18%);
+    font-family: 'Outfit-Bold', sans-serif;
+    padding: 10px;
+}
+.ingredient, .instructions{
+    border-bottom: 0.1rem solid hsl(30, 18%, 87%);
+    padding-bottom: 5px;
+}
+.sub-header{
+    font-family: 'YoungSerif', sans-serif;
+    color: hsl(14, 45%, 36%);
+    margin-bottom: 5px;
+}
+.para, .key{
+    color: hsl(30, 10%, 34%);
+    font-size: 0.65rem;
+    text-align: left;
+}
+tr:not(:last-child) th{
+    border-bottom: 01px solid hsl(30, 18%, 87%);
+}
+.key, .value{
+    width: 155px;
+    padding: 5px;
+}
+.value{
+    color: hsl(14, 45%, 36%);
+    font-size: 0.65rem;
+    font-family: 'Outfit-Bold', sans-serif;
+}
+
+.attribution {
+    margin-top: 80px;
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+@media screen and (max-width: 476px) {
+    body{
+        background-color: transparent;
+    }
+}
